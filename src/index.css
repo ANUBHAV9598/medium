@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import "tailwindcss";
+
+:root {
+    --font-quicksand: 'Quicksand', sans-serif;
+    height: 100%;
+    margin: 0;
+}
+
+/* Shimmer animation */
+@keyframes shimmer {
+    0% {
+        background-position: -450px 0;
+    }
+    100% {
+        background-position: 450px 0;
+    }
+}
+
+.animate-shimmer {
+    background-size: 450px 100%;
+    animation: shimmer 1.5s linear infinite;
+}
